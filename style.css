@@ -1,8 +1,11 @@
 body {
-    background-color: rgb(255, 199, 164);
+    background-color: rgba(254, 254, 253, 0.906);
     margin: 0;
     padding: 0;
     align-content: center;
+}
+.op{
+    filter:drop-shadow(10px 7px 10px black);
 }
 
 ul {
@@ -20,6 +23,7 @@ ul {
     font-size: xx-large;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 li {
