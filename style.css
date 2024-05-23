@@ -3,96 +3,126 @@ body {
     margin: 0;
     padding: 0;
     align-content: center;
+    font-family: Arial, sans-serif;
 }
-.op{
-    filter:drop-shadow(10px 7px 10px black);
+
+.op {
+    filter: drop-shadow(10px 7px 10px black);
 }
 
 ul {
     list-style-type: none;
-    margin-top: 0;
     margin: 0;
     padding: 0;
     background-color: black;
     width: 100%;
     text-align: center;
-    margin: 0;
-    padding: 0;
     height: 80px;
     color: white;
     font-size: xx-large;
     position: fixed;
     top: 0;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 li {
     display: inline-block;
     padding: 10px 20px;
-    margin: 20px;
-    margin-right: 100px;
-    height: 50%;
-    margin-top: 0;
+    margin: 0 10px;
 }
 
 hr {
-    border-style: none;
-    border-top-style: dotted;
-    border-color: grey;
-    border-width:  5px;
+    border: none;
+    border-top: 5px dotted grey;
     width: 5%;
-    margin-top: 50px;
+    margin: 50px auto;
 }
 
-h2{
+h2 {
     font-size: xx-large;
+    text-align: center;
 }
 
 li a {
     text-decoration: none;
-    color: #333;
+    color: white;
     display: inline-flex;
     padding: 10px 20px;
     font-size: larger;
-    color: white;
 }
 
 li a:hover {
     color: #ff0000;
 }
 
-p{
-    width: 400px;
-    margin: auto;
-}
-img{
-    height: 300px;
-    padding: 40px;
-    padding-right: 65px;
+p {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
 }
 
-#table{
-    margin-top: 100px;
+img {
+    height: 200px;
+    width: auto;
+    padding: 20px;
 }
-.text{
+
+#table {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.text {
     text-align: center;
     font-family: cursive;
 }
-.center{
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 50px;
+
+.center {
+    margin: 0 auto;
 }
-.space{
-    padding-right: 30px;
-}
-.sift{
+
+.sift {
     font-weight: 900;
     font-size: large;
 }
-footer{
+
+footer {
     background-color: black;
+    text-align: center;
+    padding: 20px 0;
 }
-.padd{
-   padding-right: 50px;
+
+.padd {
+    padding-right: 50px;
+}
+
+@media (max-width: 768px) {
+    img {
+        height: 150px;
+    }
+
+    li {
+        margin: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        height: auto;
+    }
+
+    table {
+        width: 100%;
+        font-size: smaller;
+    }
+
+    .padd {
+        padding: 10px;
+    }
+
+    p {
+        width: 100%;
+    }
 }
